@@ -66,9 +66,16 @@ body {
   max-width: 100vw;
   overflow-x: hidden;
 }
-
+.nav1 {
+  display: flex;
+  align-items: center;
+  gap: 14rem;
+}
 .container {
   position: relative;
+  max-width: 100vw;
+  overflow-x: hidden;
+  height: 100%;
 }
 .container .arrow {
   position: absolute;
@@ -148,7 +155,7 @@ body {
 }
 .content p {
   color: #eeeeee;
-  font-size: 16px;
+  font-size: 18px;
   font-family: "cabinet-grotesk-light";
   text-align: center;
   line-height: 1.2;
@@ -161,11 +168,179 @@ body {
   border-radius: 8px;
   cursor: default;
   font-family: "cabinet-grotesk-bold";
-  font-size: 16px;
+  font-size: 20px;
   margin-top: 18px;
 }
 .content .mockup {
   width: 850px;
   margin-top: 30px;
   height: 460px;
+}
+
+@media screen and (max-width: 1139px) {
+  .nav1 {
+    display: flex;
+    align-items: center;
+    gap: 7rem;
+  }
+  .contentContainer nav ul {
+    display: flex;
+    list-style: none;
+    gap: 3rem;
+    color: #fff;
+    font-family: "cabinet-grotesk-regular", sans-serif;
+    font-size: 15px;
+  }
+  .container .arrow {
+    position: absolute;
+    right: -10px;
+    width: 100px;
+  }
+  .content .mockup {
+    width: 650px;
+    margin-top: 30px;
+    height: 360px;
+  }
+  .comingSoon2 {
+    background-color: #ff8200;
+    color: #fff;
+    padding: 7px 10px;
+    border-radius: 8px;
+    cursor: default;
+    font-family: "cabinet-grotesk-bold";
+    font-size: 16px;
+    margin-top: 18px;
+  }
+}
+@media screen and (max-width: 975px) {
+  .content .mockup {
+    width: 650px;
+    margin-top: 30px;
+    height: 360px;
+  }
+  .comingSoon2 {
+    background-color: #ff8200;
+    color: #fff;
+    padding: 7px 10px;
+    border-radius: 8px;
+    cursor: default;
+    font-family: "cabinet-grotesk-bold";
+    font-size: 16px;
+    margin-top: 18px;
+  }
+  .content .heading {
+    position: relative;
+    width: 450px;
+    height: 120px;
+  }
+  .content .heading .scribble {
+    position: absolute;
+
+    width: 90px;
+    height: 14px;
+    right: 80px;
+    top: 40px;
+    z-index: 1;
+  }
+  .content .heading h1 {
+    color: #fff;
+    font-size: 40px;
+    font-family: "cabinet-grotesk-extra-bold";
+    text-align: center;
+    position: absolute;
+    z-index: 2;
+  }
+  .content p {
+    color: #eeeeee;
+    font-size: 13px;
+    font-family: "cabinet-grotesk-light";
+    text-align: center;
+    line-height: 1.2;
+    margin-top: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 724px) {
+  .contentContainer nav ul {
+    display: none;
+  }
+  .content .mockup {
+    width: 450px;
+    margin-top: 30px;
+    height: 260px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .contentContainer nav {
+    padding: 0.6rem 2rem;
+    display: flex;
+    justify-content: space-between;
+  }
+  .contentContainer nav .logo {
+    font-size: 14px;
+  }
+  .comingSoon {
+    padding: 5px 15px;
+    font-size: 11px;
+  }
+  .content .heading {
+    position: relative;
+    width: 350px;
+    height: 80px;
+  }
+  .content .heading .scribble {
+    position: absolute;
+    width: 60px;
+    height: 7px;
+    right: 40px;
+    top: 30px;
+    z-index: 1;
+  }
+  .content .heading h1 {
+    font-size: 30px;
+  }
+  .content p {
+    font-size: 10px;
+  }
+  .container .arrow {
+    position: absolute;
+    right: -10px;
+    width: 50px;
+  }
+  .content .mockup {
+    width: 350px;
+    margin-top: 30px;
+    height: 200px;
+  }
+  .container img {
+    height: 70vh;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .content p {
+    font-size: 9px;
+  }
+}
+@media screen and (max-width: 353px) {
+  .content p {
+    font-size: 9px;
+  }
+  .content .heading h1 {
+    font-size: 25px;
+  }
+  .content .heading {
+    position: relative;
+    width: 290px;
+    height: 80px;
+  }
+  .content .heading .scribble {
+    position: absolute;
+    width: 60px;
+    height: 5px;
+    right: 20px;
+    top: 30px;
+    z-index: 1;
+  }
 }
